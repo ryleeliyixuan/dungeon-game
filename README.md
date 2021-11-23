@@ -27,6 +27,9 @@ With an initial health point of 15, the player successfully rescues the princess
 * __Post-game:__ The one who successfully saves the princess with the largest amount of health points (above 0) wins the game. 
   * The system will notify them about the winner.
 
+### Design
+![project-plan-desing](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/project-plan-design.jpg)
+
 ## Timeline
 * 11/22: Project Plan submitted.
 * 11/30: Functional check-off submitted. Finish our first version of the prototype(simply use the cardboard and draw a matrix on the board for initial tests).
