@@ -48,6 +48,9 @@ With an initial health point of 15, the player successfully rescues the princess
 * Red light button for death, green light button for alive
 * Joystick for instruction and the number of players
 
+## Risks/Contingencies
+* 3d printing being too complicated
+
 ## Fall-back plan
 The algorithms used in this project are clear and simple. The main concern is whether the hardware parts can be used appropriately to build the functions in our expectations. For instance, if the outer part of our game board prototype is not built properly with the 3D printer, a prototype with a hand-crafted part has to be used instead. 
 
