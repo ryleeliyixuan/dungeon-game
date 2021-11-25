@@ -54,5 +54,9 @@ With an initial health point of 15, the player successfully rescues the princess
 ## Fall-back plan
 The algorithms used in this project are clear and simple. The main concern is whether the hardware parts can be used appropriately to build the functions in our expectations. For instance, if the outer part of our game board prototype is not built properly with the 3D printer, a prototype with a hand-crafted part has to be used instead. 
 
-
+# Feedback
+We received the following feedback:
+* This sounds like a cool project that would create a fun game! Perhaps you could enable to player to move up and to the left as well. I also think making it less completely unknown to the user what the next room might be would also be cool. For example, you could have each neighboring square tell you whether there is a high/medium/low chance of danger/health orb and a high/medium/low quantity of damage/health added in that room, so they can make a more strategic decision whether or not they should take that square or not given their health. You could also implement a total move quantity, so that the player cannot make more moves than this quantity (this would make the ability to move in any direction more fair). [Donal Michael Thomas Lowsley-Williams]
+* Nice plan and documentation. What are you planning to add beyond the existing dungeon game? It looks reasonable for two people. Consider how you can add to the interaction and make the game fun considering things like what happens after winning, etc. [Alexandra Walburgis Dongfangchen Bremers]
+* It is an interesting implementation of the dungeon game on Raspberry pi. I like the design illustration of the system as it explains clearly the components. One thing I am am not sure is how you track the movement of the "knight" in each step. It would be great if you can mention it in your document. [Yehao Zhang]
 
