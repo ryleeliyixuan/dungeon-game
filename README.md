@@ -60,3 +60,7 @@ We received the following feedback:
 * Nice plan and documentation. What are you planning to add beyond the existing dungeon game? It looks reasonable for two people. Consider how you can add to the interaction and make the game fun considering things like what happens after winning, etc. [Alexandra Walburgis Dongfangchen Bremers]
 * It is an interesting implementation of the dungeon game on Raspberry pi. I like the design illustration of the system as it explains clearly the components. One thing I am am not sure is how you track the movement of the "knight" in each step. It would be great if you can mention it in your document. [Yehao Zhang]
 
+# Paper Prototype
+This is the scatch of our paper prototype.
+![paper-prototype-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/paper-prototype-1.jpeg)
+
