@@ -95,6 +95,7 @@ This is the 2d draft of our CAD prototype (version 2).
 ### Iteration Explained:
 *  **Cable:** We leave a space to let the power cable out.
 *  **Grid Layout:** We indeed built 3d model based on 2d draft v1. However, we don't think this design can work. Our initial purpose is having one grid layout that 1. can support the chess 2. the chess can have contact with the corresponding copper tape once placed on that cell (this is how we track the movement of the knight). This design makes the grid too thin to support the chess. Thus we further improve the grid layout.
+
 ![grid-v1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/grid-v1.png)
 ![grid-v1-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/grid-v1-2.png)
 
