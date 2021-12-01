@@ -12,13 +12,13 @@ The demons had captured the princess and imprisoned her in the bottom-right corn
 * Some of the rooms are guarded by demons (represented by negative integers), so the knight loses health upon entering these rooms; other rooms are either empty (represented as 0) or contain magic orbs that increase the knight's health (represented by positive integers).
 * To reach the princess as quickly as possible, the knight decides to move *only rightward or downward* in each step.
 * Players won’t know whether a room has demons or magic orbs before they enter the room. 
-* Note: The order will affect the game results. 
 
 #### Example
 With an initial health point of 15, the player successfully rescues the princess by following the path indicated on the matrix.  
 ![example-dungeon-grid](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/dungeon-grid-1.jpeg)
 
 ### Logistic
+#### Version 1: 
 * __Pre-game:__ Users can input the number of players at the beginning. 
 * __During the game:__ Each player has one chance to play the game. They all play the game in the same setting with the same amount of initial health points. 
   * The system will keep track of the healthy points and display them on the OLED screen. 
@@ -26,6 +26,14 @@ With an initial health point of 15, the player successfully rescues the princess
   * The system will record the score of each player.  
 * __Post-game:__ The one who successfully saves the princess with the largest amount of health points (above 0) wins the game. 
   * The system will notify them about the winner.
+
+#### Version 2 (MOST RECENT): 
+* __Pre-game:__ We have one player for this game. He/she have 3 chances (ie. rounds) to save the princess. 
+* __During the game:__ Players  play the game in a random generated setting with random generated amount of initial health points. But it's guranteed that there's a path such that they can save the princess out.
+  * The system will keep track of the healthy points and display them on the OLED screen. 
+  * The system will notify the players whether their moves increase or decrease their health points (ie. encounter demons or magic orbs). And they will be alerted with “game over” once their health drops to 0 or below.
+* __Post-game:__ If successfully saving the princess with amount of health points (above 0), the player wins the game. 
+  * The system will notify the final results.
 
 ### Design
 ![project-plan-desing](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/project-plan-design.jpg)
@@ -46,7 +54,7 @@ With an initial health point of 15, the player successfully rescues the princess
 * OLED screen
 * Speaker
 * Red light button for death, green light button for alive
-* Joystick for instruction and the number of players
+* Joystick for instruction and the number of players (update: no longer needed)
 
 ## Risks/Contingencies
 * 3d printing being too complicated
@@ -60,7 +68,20 @@ We received the following feedback:
 * Nice plan and documentation. What are you planning to add beyond the existing dungeon game? It looks reasonable for two people. Consider how you can add to the interaction and make the game fun considering things like what happens after winning, etc. [Alexandra Walburgis Dongfangchen Bremers]
 * It is an interesting implementation of the dungeon game on Raspberry pi. I like the design illustration of the system as it explains clearly the components. One thing I am am not sure is how you track the movement of the "knight" in each step. It would be great if you can mention it in your document. [Yehao Zhang]
 
+# Function Check-off
+* **Logistic**: We carefully thought through the case of having multi-players. We think this would not be a fair game if we ask each of the players play the game after/before some others. This is because one playing after the others can observe the previous rounds and see the patterns, thus having higher chance of succeeding in the game. 
+  * In response to this, we change the game to "one-player, multiple rounds". We will have one player playing on the same matrix for 3 round. The metric of success is whether he/she can save the princess. And the trick of this game is to learn from the failed round, memorize whether rooms have demons or magic orbs.
+  * In this case, we cancel the placement of joystick as players don't have to choose the number of players anymore.  
+  * Updated version of the logistic can be found in the BIG IDEA section. 
+* **Basic Function**: We realized the basic algorithm of this game. From the following video, we can see how sound alerts and text display change according to the status of the knight (die vs. save the princess).
+  * [Function Check Off - Case 1: DIE](https://youtu.be/FmcbGyky4Jw) : the knight enters room no.3 (indexed from 0) which have demons. His health points drop below 0 and dies.
+  * [Function Check Off - Case 2: SAVE THE PRINCESS](https://youtu.be/gMr6t6nUbvM) : the knight enters room no.8 (indexed from 0; this is the room where the princess is located). He sucessfully saves the princess. 
+
 # Paper Prototype
 This is the scatch of our paper prototype.
 ![paper-prototype-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/paper-prototype-1.jpeg)
+
+# CAD Prototype
+This is the 2d draft of our CAD prototype. 
+
 
