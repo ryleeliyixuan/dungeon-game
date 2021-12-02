@@ -102,5 +102,9 @@ This is the 2d draft of our CAD prototype (version 2).
 
 
 ## 3d CAD Prototype
-We are still working on it!
+![game-box-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/3d-cad-model/game-box-1.jpeg)
+![game-box-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/3d-cad-model/game-box-2.jpeg)
+![game-box-3](https://github.com/ryleeliyixuan/dungeon-game/blob/main/3d-cad-model/game-box-3.jpeg)
+
+[A video showcases the 3d cad model can be found here](https://youtu.be/jVL9Jbo_lVY)
 
