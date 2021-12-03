@@ -78,17 +78,17 @@ We received the following feedback:
   * [Function Check Off - Case 1: DIE](https://youtu.be/FmcbGyky4Jw) : the knight enters room no.3 (indexed from 0) which have demons. His health points drop below 0 and dies.
   * [Function Check Off - Case 2: SAVE THE PRINCESS](https://youtu.be/gMr6t6nUbvM) : the knight enters room no.8 (indexed from 0; this is the room where the princess is located). He sucessfully saves the princess. 
 
-# Paper Prototype
+# Product Iteration
+## Iteration 1 - Paper Prototype
 This is the scatch of our paper prototype.
 ![paper-prototype-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/paper-prototype-1.jpeg)
 
-# CAD Prototype
-## 2d Draft V1
+## Iteration 2 - CAD Prototype - 2d Draft 1
 This is the 2d draft of our CAD prototype (version 1). 
 
 ![2d-draft-v1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/2d-draft-v1.jpg)
 
-## 2d Draft V2
+## Iteration 3 - CAD Prototype - 2d Draft 2
 This is the 2d draft of our CAD prototype (version 2). 
 
 ![2d-draft-v2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/2d-draft-v2.jpg)
@@ -101,10 +101,29 @@ This is the 2d draft of our CAD prototype (version 2).
 ![grid-v1-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/grid-v1-2.png)
 
 
-## 3d CAD Prototype
+## Iteration 3 - CAD Prototype - 3d CAD Prototype
 ![game-box-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/3d-cad-model/game-box-1.jpeg)
 ![game-box-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/3d-cad-model/game-box-2.jpeg)
 ![game-box-3](https://github.com/ryleeliyixuan/dungeon-game/blob/main/3d-cad-model/game-box-3.jpeg)
 
-[A video showcases the 3d cad model can be found here](https://youtu.be/jVL9Jbo_lVY)
+* [A video showcases the 3d cad model can be found here](https://youtu.be/jVL9Jbo_lVY)
+* [All relavant files can be found here.](https://github.com/ryleeliyixuan/dungeon-game/tree/main/3d-cad-model)
+
+## Iteration 4 - Laser Cutting
+* **Why Laser Cutting:** During our function check off, Wendy and Rei suggested that it would be better to apply laser cutting rather than 3d printing to our gamebox. We understand that the 3d printers are pretty occupied during the final week. And we consider that our flat design does not necessarily need use of 3d printer and we don't want to occupy resources when they're already intense. 
+### The Design
+The stroke for those parts that are supposted to be cut is thin. And the stroke for those parts that are supposted to be etched is strong.
+![dungeongame](https://github.com/ryleeliyixuan/dungeon-game/blob/main/2d-laser-cut/dungeongame.svg)
+
+### The Process
+![laser-cut-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/2d-laser-cut/laser-cut-1.jpeg)
+![laser-cut-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/2d-laser-cut/laser-cut-2.jpeg)
+![laser-cut-3](https://github.com/ryleeliyixuan/dungeon-game/blob/main/2d-laser-cut/laser-cut-3.jpeg)
+![laser-cut-4](https://github.com/ryleeliyixuan/dungeon-game/blob/main/2d-laser-cut/laser-cut-4.jpeg)
+
+### Prototype
+* [A video showcases the laser cutting model can be found here](https://youtu.be/WVc9eOcwr9I)
+* [All relavant files can be found here.](https://github.com/ryleeliyixuan/dungeon-game/tree/main/2d-laser-cut)
+
+# Connect All the Things Together
 
