@@ -69,10 +69,6 @@ We received the following feedback:
 * It is an interesting implementation of the dungeon game on Raspberry pi. I like the design illustration of the system as it explains clearly the components. One thing I am am not sure is how you track the movement of the "knight" in each step. It would be great if you can mention it in your document. [Yehao Zhang] 
 
 # Function Check-off
-* **Logistic**: We carefully thought through the case of having multi-players. We think this would not be a fair game if we ask each of the players play the game after/before some others. This is because one playing after the others can observe the previous rounds and see the patterns, thus having higher chance of succeeding in the game. 
-  * In response to this, we change the game to "one-player, multiple rounds". We will have one player playing on the same matrix for 3 round. The metric of success is whether he/she can save the princess. And the trick of this game is to learn from the failed round, memorize whether rooms have demons or magic orbs.
-  * In this case, we cancel the placement of joystick as players don't have to choose the number of players anymore.  
-  * Updated version of the logistic can be found in the BIG IDEA section. 
 * **How we track the movement of the "knight" in each step**: On each cell of the board, there is a copper tape placed on it. And the tape is connected to the capacity sensor underneath. Once the knight moves on a specific cell, the sensor receives the status that the knight is on that cell. And finally our Raspberry Pi stores the coordinate information.
 * **Basic Function**: We realized the basic algorithm of this game. From the following video, we can see how sound alerts and text display change according to the status of the knight (die vs. save the princess).
   * [Function Check Off - Case 1: DIE](https://youtu.be/FmcbGyky4Jw) : the knight enters room no.3 (indexed from 0) which have demons. His health points drop below 0 and dies.
@@ -84,6 +80,11 @@ This is the scatch of our paper prototype.
 ![paper-prototype-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/paper-prototype-1.jpeg)
 
 ## Iteration 2 - CAD Prototype - 2d Draft 1
+### Iteration Explained
+* **Logistic**: We carefully thought through the case of having multi-players. We think this would not be a fair game if we ask each of the players play the game after/before some others. This is because one playing after the others can observe the previous rounds and see the patterns, thus having higher chance of succeeding in the game. 
+  * In response to this, we change the game to "one-player, multiple rounds". We will have one player playing on the same matrix for 3 round. The metric of success is whether he/she can save the princess. And the trick of this game is to learn from the failed round, memorize whether rooms have demons or magic orbs.
+  * In this case, we cancel the placement of joystick as players don't have to choose the number of players anymore.  
+  * Updated version of the logistic can be found in the BIG IDEA section. 
 This is the 2d draft of our CAD prototype (version 1). 
 
 ![2d-draft-v1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/2d-draft-v1.jpg)
@@ -93,7 +94,7 @@ This is the 2d draft of our CAD prototype (version 2).
 
 ![2d-draft-v2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/2d-draft-v2.jpg)
 
-### Iteration Explained:
+### Iteration Explained
 *  **Cable:** We leave a space to let the power cable out.
 *  **Grid Layout:** We indeed built 3d model based on 2d draft v1. However, we don't think this design can work. Our initial purpose is having one grid layout that 1. can support the chess 2. the chess can have contact with the corresponding copper tape once placed on that cell (this is how we track the movement of the knight). This design makes the grid too thin to support the chess. Thus we further improve the grid layout.
 
@@ -110,7 +111,12 @@ This is the 2d draft of our CAD prototype (version 2).
 * [All relavant files can be found here.](https://github.com/ryleeliyixuan/dungeon-game/tree/main/3d-cad-model)
 
 ## Iteration 4 - Laser Cutting
+### Iteration Explained
 * **Why Laser Cutting:** During our function check off, Wendy and Rei suggested that it would be better to apply laser cutting rather than 3d printing to our gamebox. We understand that the 3d printers are pretty occupied during the final week. And we consider that our flat design does not necessarily need use of 3d printer and we don't want to occupy resources when they're already intense. 
+* **Game Instruction:** According to KI's feedback, although the game rule is simple once ellaborated clearly, people may find hard to understand it if there's no instruction beforehand. So we decide to add text-form instruction on the gamebox.
+* **Voice Alert:** We add voice alerts that guide users and inform them about the status of the game (eg. when the game starts - "Your health point now is 15. Please start your tour to save the princess.").
+
+
 ### The Design
 The stroke for those parts that are supposted to be cut is thin. And the stroke for those parts that are supposted to be etched is strong.
 ![dungeongame](https://github.com/ryleeliyixuan/dungeon-game/blob/main/2d-laser-cut/dungeongame.svg)
@@ -125,5 +131,27 @@ The stroke for those parts that are supposted to be cut is thin. And the stroke 
 * [A video showcases the laser cutting model can be found here](https://youtu.be/WVc9eOcwr9I)
 * [All relavant files can be found here.](https://github.com/ryleeliyixuan/dungeon-game/tree/main/2d-laser-cut)
 
-# Connect All the Things Together
+## Connect All the Things Together
+### The Process
+![connect-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/connect-1.jpeg)
+![connect-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/connect-2.jpeg)
+
+### Modification and Improvement
+* **Routing of the Copper Tape**: We need to map each cell/room to key on the capacitive sensor. Initially, our map was "room 0 -> 0, room 1 -> 1, ...., room 9 -> 8" as our room was indexed from 0. However, when we implemented the routing of the copper tape, we found out that tape would tangle together if we strictly followed this map. Thus, we changed the map to "room 0 -> 0, room 1 -> 1, room 2 -> 4, room 3 -> 3, room 4 -> 11, room 5 -> 2, room 6 -> 5, room 7 -> 10, room 8 -> 9." In this case, the tape will be spread out.
+
+![connect-3](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/connect-3.jpeg)
+
+## User Test
+Although we collect feedbacks from users along the way, we still invite 3 users to test out our gamebox. 
+
+### Problems and Solutions
+Below are some corner cases that we should take care of and later take a close examine on that:
+* **P1:** If users did not understand the rule, rather than move down the knight rightward or downward, they may move it leftward or upward. However, our gamebox do not have any mechanism to prevent these false moves. 
+ * **S1:** If users make false moves, we'll alert them and make that move invalid.
+* **P1:** Sometimes, when users placed the knight on the cell, there's no response from our Pi. This is because the there are some cracks on our tape.
+ * **S1:** Enhance the tape. 
+
+
+# Final Deliverables
+## Video
 
