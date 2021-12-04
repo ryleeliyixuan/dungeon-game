@@ -45,14 +45,14 @@ oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
 oled.show()
 
-ls = [-2, 3, 3, -5, -10, 1, 10, 30, -5]
+ls = [-2, 3, -10, 0, 3, 1, -10, 0, 0, 30, 10, -5]
 blood = 15
 handle_speak('Your blood is 15, please start your tour to save the princess')
 while blood > 0:
-    for i in range(9):
+    for i in range(12):
         if mpr121[i].value:
              blood += ls[i]
-             if i == 8:
+             if i == 6:
                  if blood > 0:
                      print('You save the princess')
                      redButton.LED_off()
@@ -102,6 +102,7 @@ while blood > 0:
                      oled.image(image)
                      oled.show()
                      handle_speak("On the way"  + 'Your blood is ' + str(blood))
+                     break
                  else:
                      print('You died')
                      redButton.LED_on(155)
