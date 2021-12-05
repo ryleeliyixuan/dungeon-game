@@ -12,6 +12,9 @@ The demons had captured the princess and imprisoned her in the bottom-right corn
 * Some of the rooms are guarded by demons (represented by negative integers), so the knight loses health upon entering these rooms; other rooms are either empty (represented as 0) or contain magic orbs that increase the knight's health (represented by positive integers).
 * To reach the princess as quickly as possible, the knight decides to move *only rightward or downward* in each step.
 * Players won’t know whether a room has demons or magic orbs before they enter the room. 
+![IDD-DungeonGame-Rule-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/IDD-DungeonGame-Rule-1.jpg)
+![IDD-DungeonGame-Rule-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/IDD-DungeonGame-Rule-3.jpg)
+![IDD-DungeonGame-Rule-3](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/IDD-DungeonGame-Rule-2.jpg)
 
 #### Example
 With an initial health point of 15, the player successfully rescues the princess by following the path indicated on the matrix.  
@@ -147,9 +150,11 @@ Although we collect feedbacks from users along the way, we still invite 3 users 
 ### Problems and Solutions
 Below are some corner cases that we should take care of and later take a close examine on that:
 * **P1:** If users did not understand the rule, rather than move down the knight rightward or downward, they may move it leftward or upward. However, our gamebox do not have any mechanism to prevent these false moves. 
- * **S1:** If users make false moves, we'll alert them and make that move invalid.
-* **P1:** Sometimes, when users placed the knight on the cell, there's no response from our Pi. This is because the there are some cracks on our tape.
- * **S1:** Enhance the tape. 
+  * **S1:** If users make false moves, we'll alert them and make that move invalid.
+* **P2:** Sometimes, when users placed the knight on the cell, there's no response from our Pi. This is because the there are some cracks on our tape.
+  * **S2:** Enhance the tape. 
+* **P3:** users donot know which round they are in.
+  * **S3:** Add voice alert to notify the current round. 
 
 
 # Final Deliverables
