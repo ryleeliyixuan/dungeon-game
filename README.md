@@ -1,5 +1,16 @@
 # dungeon-game
 This is the final project for the course Interactive Device Design at Cornell Tech. We will use Raspberry Pi to build a machine that executes the dungeon game.
+[Project Plan](#project-plan)
+
+[Function Check-off](#function-check-off)
+
+[Product Iteration](#product-iteration)
+
+[Connect All the Things Together](#connect-all-the-things-together)
+
+[User Test](#user-test)
+
+[Final Deliverables](#final-deliverables)
 
 # Project Plan
 ## Big idea
@@ -65,7 +76,7 @@ With an initial health point of 15, the player successfully rescues the princess
 ## Fall-back plan
 The algorithms used in this project are clear and simple. The main concern is whether the hardware parts can be used appropriately to build the functions in our expectations. For instance, if the outer part of our game board prototype is not built properly with the 3D printer, a prototype with a hand-crafted part has to be used instead. 
 
-# Feedback
+## Feedback
 We received the following feedback:
 * This sounds like a cool project that would create a fun game! Perhaps you could enable to player to move up and to the left as well. I also think making it less completely unknown to the user what the next room might be would also be cool. For example, you could have each neighboring square tell you whether there is a high/medium/low chance of danger/health orb and a high/medium/low quantity of damage/health added in that room, so they can make a more strategic decision whether or not they should take that square or not given their health. You could also implement a total move quantity, so that the player cannot make more moves than this quantity (this would make the ability to move in any direction more fair). [Donal Michael Thomas Lowsley-Williams]
 * Nice plan and documentation. What are you planning to add beyond the existing dungeon game? It looks reasonable for two people. Consider how you can add to the interaction and make the game fun considering things like what happens after winning, etc. [Alexandra Walburgis Dongfangchen Bremers]
@@ -147,6 +158,9 @@ The stroke for those parts that are supposted to be cut is thin. And the stroke 
 ## User Test
 Although we collect feedbacks from users along the way, we still invite 3 users to test out our gamebox. 
 
+### Video
+[Video of the user test can be found here.](https://youtu.be/AI9DVx5K6qg)
+
 ### Problems and Solutions
 Below are some corner cases that we should take care of and later take a close examine on that:
 * **P1:** If users did not understand the rule, rather than move down the knight rightward or downward, they may move it leftward or upward. However, our gamebox do not have any mechanism to prevent these false moves. 
@@ -158,5 +172,17 @@ Below are some corner cases that we should take care of and later take a close e
 
 
 # Final Deliverables
+## Code
+ One need to go the circuitpython environment, pip install the requirements file, and run python game.py to run the game.
+   ```
+  pi@ixe00:~ $ source circuitpython/bin/activate
+  (circuitpython) pi@ixe00:~ $ cd Interactive-Lab-Hub/game
+  (circuitpython) pi@ixe00:~ Interactive-Lab-Hub/game $ pip install -r requirements.txt
+  (circuitpython) pi@ixe00:~/Interactive-Lab-Hub/game $ python game.py
+  ```
+All code can be found [here.](https://github.com/ryleeliyixuan/dungeon-game/blob/main/game.py) 
+
+
 ## Video
+[Final Video can be found here.](https://youtu.be/RljdgDhUrUA) 
 
