@@ -1,5 +1,6 @@
 # dungeon-game
 This is the final project for the course Interactive Device Design at Cornell Tech. We will use Raspberry Pi to build a machine that executes the dungeon game.
+
 [Project Plan](#project-plan)
 
 [Function Check-off](#function-check-off)
@@ -145,7 +146,7 @@ The stroke for those parts that are supposted to be cut is thin. And the stroke 
 * [A video showcases the laser cutting model can be found here](https://youtu.be/WVc9eOcwr9I)
 * [All relavant files can be found here.](https://github.com/ryleeliyixuan/dungeon-game/tree/main/2d-laser-cut)
 
-## Connect All the Things Together
+# Connect All the Things Together
 ### The Process
 ![connect-1](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/connect-1.jpeg)
 ![connect-2](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/connect-2.jpeg)
@@ -155,7 +156,7 @@ The stroke for those parts that are supposted to be cut is thin. And the stroke 
 
 ![connect-3](https://github.com/ryleeliyixuan/dungeon-game/blob/main/img/connect-3.jpeg)
 
-## User Test
+# User Test
 Although we collect feedbacks from users along the way, we still invite 3 users to test out our gamebox. 
 
 ### Video
