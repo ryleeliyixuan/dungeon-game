@@ -13,6 +13,8 @@ This is the final project for the course Interactive Device Design at Cornell Te
 
 [Final Deliverables](#final-deliverables)
 
+[More to Think About...](#final-deliverables)
+
 # Project Plan
 ## Big idea
 ### Background
@@ -186,4 +188,10 @@ All code can be found [here.](https://github.com/ryleeliyixuan/dungeon-game/blob
 
 ## Video
 [Final Video can be found here.](https://youtu.be/RljdgDhUrUA) 
+
+[Checkout our showcase on the final presentation day.](https://youtu.be/KSc5hwFQiBk)
+
+# More to Think About...
+* Extend this game to multi-players game.
+* More visual indication on the board.
 
