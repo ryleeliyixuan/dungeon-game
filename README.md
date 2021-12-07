@@ -13,7 +13,7 @@ This is the final project for the course Interactive Device Design at Cornell Te
 
 [Final Deliverables](#final-deliverables)
 
-[More to Think About...](#final-deliverables)
+[More to Think About...](#more-to-think-about)
 
 # Project Plan
 ## Big idea
