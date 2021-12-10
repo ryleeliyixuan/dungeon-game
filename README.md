@@ -13,7 +13,8 @@ This is the final project for the course Interactive Device Design at Cornell Te
 
 [Final Deliverables](#final-deliverables)
 
-[More to Think About...](#more-to-think-about)
+[Project Reflections](#project-reflections)
+
 
 # Project Plan
 ## Big idea
@@ -191,7 +192,17 @@ All code can be found [here.](https://github.com/ryleeliyixuan/dungeon-game/blob
 
 [Checkout our showcase on the final presentation day.](https://youtu.be/KSc5hwFQiBk)
 
-# More to Think About...
-* Extend this game to multi-players game.
-* More visual indication on the board.
+
+# Project Reflections
+The interactive device design practice of this semester is over. We have learned a lot when creating our own prototypes in each lab.
+
+* **What we learn from this project**
+  * The goal of interactive system design can be analyzed from the two levels of "usability" and "user experience", focusing on people-oriented user needs. From the experience we got from this project, we have a comprehensive understanding of how to design a product that is valuable and easy for users to manipulate. And user experience is the core focus of our design. 
+  * In the Dungeon Game board, players act as a knight trying to save the princess and control their action by moving the chess. We use capacitive sensors to track the movement of the chess, mapping the position of the chess to numerical code which is the input of our algorithm. We learned to utilize multiple sensors and buttons to facilitate users’ understanding of the game rules and enhance their experience by engaging them with voice/light instruction. 
+  * We learned to iterate products based on pilot tests. Users’ feedback has really driven our product development. We indeed received valuable feedback during the final presentation session. Something more to think about includes: 1. We may extend this game to a multi-players version. 2. We may add more visual indications on the board with laser cutting.
+
+
+* **Wish to know**
+  * We wish we knew about different approaches to build our exterior at the start of the project. We went straight for 3d printing and even built the 3d model as we didn’t know about the option of laser-cutting. However, during the function check off, Wendy and Rei suggested that it would be better to apply laser cutting rather than 3d printing. Then we realized that our flat design did not necessarily need the use of 3d printing.
+
 
